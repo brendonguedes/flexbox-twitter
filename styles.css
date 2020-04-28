@@ -5,7 +5,7 @@
 } /*Reset nas configurações padrões de CSS*/
 
 body {
-  background: #e6ecf0;
+  background: #2a2c37;
   font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
@@ -24,7 +24,7 @@ button {
 
 header#main-header {
   height: 46px;
-  background: #fff;
+  background: rgba(42, 44, 55);
   box-shadow: 0 1px 1px rgba(0, 0, 25);
   position: relative;
   z-index: 1;
@@ -47,7 +47,7 @@ header#main-header nav ul li {
   align-items: center;
 
   font-size: 13px;
-  color: #667580;
+  color: #f2f2f2;
   font-weight: bold;
 
   margin-left: 30px;
@@ -67,11 +67,11 @@ header#main-header div.side {
 
 header#main-header div.side input {
   width: 220px;
-  border: 1px solid #e5ecf0;
+  border: 1px solid #50fa7b;
   height: 34px;
   padding: 0 30px 0 12px; /* 0 12px é vertical e horizontal, quando houver 4 valores segue em sentido horário*/
   border-radius: 16px;
-  color: #667581;
+  color: #667580;
   font-size: 12px;
   background: #f5f8fa url("/images/search.svg") no-repeat 190px center;
 }
@@ -109,4 +109,82 @@ div.banner {
   align-items: center;
   justify-content: center;
   color: #fff;
+}
+
+div.bar {
+  height: 59px;
+  background: #2a2c37;
+  color: #FFF;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+div.bar .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 285px;
+  height: 100%;
+}
+
+div.bar .content ul {
+  display: flex;
+  list-style: none;
+  height: 100%;
+}
+
+div.bar .content ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  padding: 15px;
+  position: relative;
+}
+
+div.bar .content ul li.active::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #50fa7b;
+}
+
+div.bar .content ul li span {
+  color: #667580;
+  font-size: 12px;
+  font-weight: bold;  
+}
+
+div.bar .content ul li span strong {
+  color: #667580;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 2px;
+}
+
+div.bar .content ul li.active strong {
+  color: #50fa7b;
+}
+
+div.bar .content .actions {
+  display: flex;
+}
+
+div.bar .content .actions button {
+  height: 34px; 
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 90px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #3bb9e3;
+  border: 1px solid #3bb9e3;
+  border-radius: 16px;
+
+  margin-right: 20px;
 }
