@@ -9,6 +9,6 @@ A flexbox application similar to Twitter Inc.
 
 ### Feito com HTML e CSS (Flexbox). :rocket:
 
-<img src="https://github.com/brendonguedes/images/Screenshot_2020-04-30TwitterInc.png">
+<img src="https://github.com/brendonguedes/flexbox-twitter/blob/master/images/Screenshot_2020-04-30TwitterInc.png">
 
 
